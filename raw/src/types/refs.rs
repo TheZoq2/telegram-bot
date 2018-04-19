@@ -238,7 +238,7 @@ specific_chat_id_impls!(ChannelId, Channel);
 
 /// Unique chat identifier.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
-pub struct ChatId(Integer);
+pub struct ChatId(pub Integer);
 chat_id_impls!(ChatId);
 
 /// Get `MessageId` from the type reference.
